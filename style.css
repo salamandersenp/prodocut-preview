@@ -1,0 +1,114 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+main{
+    font-family: 'Montserrat', sans-serif;
+    height: 100vh;
+    width: 100vw;
+    background-color: #F3EAE3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.opacity{
+    opacity: .5;
+}
+.container{
+    width: 35%;
+    height: 50%;
+    display: flex;
+}
+.left-side{
+    width: 50%;
+    height: 100%;
+    background-image: url(./images/image-product-desktop.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px 0px 0px 10px;
+}
+.right-side{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 50%;
+    height: 100%;
+    background-color: white;
+    border-radius: 0px 10px 10px 0px;
+    padding: 30px;
+    overflow-y: auto;
+}
+.right-side h2{
+    font-family: 'Fraunces', serif;
+    font-size: 2.1rem;
+    line-height: 2rem;
+}
+.text{
+    line-height: 1.6rem;
+}
+.perfume{
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+.right-side span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #3D8168;    
+    gap: 10px;
+    color: white;
+    padding: 18px;
+    border-radius: 10px;
+}
+.right-side span:hover{
+    cursor: pointer;
+    background-color: #1A4031;
+}
+
+.right-side span p{
+    opacity: 1;
+    font-weight: 700;
+    font-size: .9rem;
+}
+.prices{
+    display: flex;
+    opacity: 1;
+    gap: 20px;
+    align-items: center;
+}
+.first-price{
+    color: #3D8168;
+    font-size: 2rem;
+    font-family: 'Fraunces', serif;
+}
+.second-price{
+    text-decoration:line-through;
+}
+
+@media screen and (max-width: 768px) {
+    main{
+        height: 150vh;
+        align-items: baseline;
+    }
+    .container{
+        width: 90%;
+        height: 52%;
+        flex-direction: column;
+        margin-top: 50px;
+    }
+    .right-side,.left-side{
+        width: 100%;
+    }
+    .left-side{
+        border-radius: 10px 10px 0px 0px;
+        height: 400px;
+    }
+    .right-side{
+        border-radius: 0px 0px 10px 10px;
+        overflow-y: hidden;
+    }
+}
+  
+
+
